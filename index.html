@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/55e2265373.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <nav>
+      <h2 id="logo">Personal Portfolio</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">About Me</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h1>Phillip Newton Kinney</h1>
+            <p>
+              Hello! My name is Phillip Newton Kinney. I am studying to become a
+              software engineer! I graduated form Purdue University in 2017 with
+              a degree in Marketing from the Krannert Business School.
+            </p>
+            <p>
+              After graduating my interest shifted towards finance, and I managed to
+              land a position as a financial analyst. There, I was responsible
+              for managing millions of dollars worth of deals through the
+              operational pipeline for a major telecommunications conglomerate.
+            </p>
+            <p>
+              Now, I spend most of my time honing my skills as a software
+              engineer. I'm either broadening the scope of what I know, or
+              applying my knowledge towards completing projects. In this field,
+              I intend to be able to manifest ideas toward completion. Due to
+              this, my mental toolkit spans both front-end & back-end
+              engineering. A more 'complete' set of skills are listed below.
+            </p>
+            <p>
+              Fun fact! I've been programing for
+              <span id="time-container">6,485,517,420</span> seconds!
+            </p>
+          </div>
+          <img src="edited_friends.png" alt="A photo of Phillip Newton Kinney" class="portrait">
+        </div>
+      </section>
+        <div class="line" id="line1">
+        </div>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fas fa-file-excel"></i>
+          <i class="fab fa-html5" alt="HTML 5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fas fa-atom"></i>
+          <i class="fab fa-github-square"></i>
+          <i class="fas fa-database"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-salesforce"></i>
+        </div>
+      </section>
+
+      <div class="line" id="line2">
+      </div>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Rolling PE Ratios + Rolling PS Ratios</h3>
+          </summary>
+
+          <p class="project-description">
+            I noticed that most financial websites only offer the PE Ratio on a
+            one year term. Given the circumstances of the past year, I figured
+            that supplying multi-year information for these ratios would be very
+            useful. Microsoft allows a quick refresh for the stock price &
+            market caps of most companies, allowing the multi-year ratios to
+            update automatically.
+          </p>
+
+          <a id="download_button" href="/Users/newton/Documents/S&P 500/Q1 2021/S&P 500 Rolling PE Ratios + PS Ratios Q121.xlsx" download>
+            <i class="fas fa-file-download">
+            </i>
+          </a>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Project Placeholder</h3>
+          </summary>
+          <img class="project-image">
+          <p class="project-description">
+
+          </p>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Project Placeholder</h3>
+          </summary>
+          <img class="project-image">
+          <p class="project-description">
+
+          </p>
+        </details>
+      </section>
+
+      <div class="line" id="line3">
+      </div>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <h3 class="contact_pls">Feel free to reach out anytime!</h3>
+        <div id="contact_container">
+          <a href="tel:3174353251"><i class="fas fa-phone icon" id="phone_icon"></i></a>
+          <a href="http://www.linkedin.com/in/phillip-newton-kinney-825ab7a5"><i class="fab fa-linkedin icon"></i></a>
+          <a href="https://github.com/Newton10000"><i class="fab fa-github icon"></i></a>
+          <a href="mailto: newton.kinney@gmail.com"><i class="fas fa-envelope-square icon"></i></a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer></footer>
+
+  <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "05-11-1995";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
+
+</body>
+</html>
