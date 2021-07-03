@@ -20,6 +20,7 @@
         <div class="about-me-container">
           <div class="about-me-text-container">
             <h1>Phillip Newton Kinney</h1>
+            <div class="about-me-summary">
             <p>
               Hello! My name is Phillip Newton Kinney. I am studying to become a
               software engineer! I graduated form Purdue University in 2017 with
@@ -43,64 +44,69 @@
               Fun fact! We've been in the year 2021 for
               <span id="time-container">6,485,517,420</span> seconds!
             </p>
+            </div>
           </div>
           <img src="edited_friends.png" alt="A photo of Phillip Newton Kinney" class="portrait">
         </div>
       </section>
-        <div class="line" id="line1">
+        <div class="line" id="line1"> <!-- Cool red-to-yellow line -->
         </div>
       <section id="skills">
         <h2>Skills</h2>
         <div id="skills-container">
-          <i class="fas fa-file-excel"></i>
-          <i class="fab fa-html5" alt="HTML 5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js"></i>
-          <i class="fas fa-atom"></i>
-          <i class="fab fa-github-square"></i>
-          <i class="fas fa-database"></i>
-          <i class="fab fa-python"></i>
-          <i class="fab fa-salesforce"></i>
+          <div class="skill" title="Excel"><i class="fas fa-file-excel"></i></div>
+          <div class="skill" title="HTML"><i class="fab fa-html5" alt="HTML 5"></i></div>
+          <div class="skill" title="CSS"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill" title="Javascript"><i class="fab fa-js"></i></div>
+          <div class="skill" title="Atom"><i class="fas fa-atom"></i></div>
+          <div class="skill" title="Github"><i class="fab fa-github-square"></i></div>
+          <div class="skill" title="SQL"><i class="fas fa-database"></i></div>
+          <div class="skill" title="Python"><i class="fab fa-python"></i></div>
+          <div class="skill" title="Salesforce"><i class="fab fa-salesforce"></i></div>
         </div>
       </section>
 
-      <div class="line" id="line2">
+      <div class="line" id="line2"> <!-- Cool yellow-to-lightblue line -->
       </div>
 
       <section id="projects">
         <h2>Projects</h2>
-        <details class="project">
+        <details class="project"> <!-- Details instead of div so the project name opens up -->
           <summary class="project-title">
             <h3>Rolling PE Ratios + Rolling PS Ratios</h3>
           </summary>
-
-          <p class="project-description">
+          <div class="project_opening_container">
+            <p class="project-description">
             I noticed that most financial websites only offer the PE Ratio on a
             one year term. Given the circumstances of the past year, I figured
             that supplying multi-year information for these ratios would be very
             useful. Microsoft allows a quick refresh for the stock price &
             market caps of most companies, allowing the multi-year ratios to
             update automatically.
-          </p>
+            </p>
 
-          <a id="download_button" href="/Users/newton/Documents/S&P 500/Q1 2021/S&P 500 Rolling PE Ratios + PS Ratios Q121.xlsx" download>
-            <i class="fas fa-file-download">
-            </i>
-          </a>
+            <a id="download_button" href="/Users/newton/Documents/S&P 500/Q1 2021/S&P 500 Rolling PE Ratios + PS Ratios Q121.xlsx" download>
+              <i class="fas fa-file-download">
+              </i>
+            </a>
+          </div>
         </details>
-        <details class="project">
+        <details class="project"> <!-- Details instead of div so the project name opens up -->
           <summary class="project-title">
             <h3>Sushi Restaurant</h3>
           </summary>
-          <p class="project-description">
-            Attached is a website for a fictional sushi restaurant. It combines
-            methods of HTML, CSS & Javascript.
-          </p>
-          <a id="download_button" href="/Users/newton/Documents/github/SushiRestaurant/index.html" download>
-            <i class="fas fa-file-download">
-            </i>
-          </a>
+          <div class="project_opening_container">
+            <p class="project-description">
+              Attached is a website for a fictional sushi restaurant. It combines
+              methods of HTML, CSS & Javascript.
+            </p>
+            <a id="download_button" href="/Users/newton/Documents/github/SushiRestaurant/index.html" download>
+              <i class="fas fa-file-download">
+              </i>
+            </a>
+          </div>
         </details>
+      <!--
         <details class="project">
           <summary class="project-title">
             <h3>Project Placeholder</h3>
@@ -110,9 +116,10 @@
 
           </p>
         </details>
+      --->
       </section>
 
-      <div class="line" id="line3">
+      <div class="line" id="line3"> <!-- Cool lightblue-to-purple line -->
       </div>
 
       <section id="contact">

@@ -72,9 +72,14 @@ nav {
   margin-right: var(--spacing-3);
 }
 
+.about-me-summary{
+  padding: 0px 20px;
+}
+
 .project-image {
   width: 50%;
 }
+
 
 .project-title h3 {
   display: inline;
@@ -119,6 +124,10 @@ a {
   margin: 0;
 }
 
+#skills {
+  padding: 30px 0px;
+}
+
 #skills-container {
   display: flex;
   width: 100%;
@@ -145,6 +154,14 @@ a {
   margin-top: var(--spacing-1);
 }
 
+.project_opening_container {
+  padding-bottom: 10px;
+}
+
+.project {
+  padding: 10px 0px;
+}
+
 projects a {
   margin-left: 44px;
   height: 32px;
@@ -159,14 +176,21 @@ projects a {
 
 .line {
 
-    height: 5px;
+    height: 7px;
     width: 100%;
     z-index: 1;
+}
+
+#download_button {
+  font-size: 24px;
+  margin-left: 44px;
+
 }
 
 
 #line1 {
   background-image: linear-gradient(to right, #ff3f3f, #f2ff3f);
+  margin-top: 20px;
 }
 
 #line2 {
