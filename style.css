@@ -58,11 +58,13 @@ nav {
   margin: var(--spacing-1);
 }
 
-.portrait {
+#profile_photo {
+  height: 450px;
   width: 300px;
+  float: right;
   border-radius: var(--border-radius);
-  flex-shrink: 0;
 }
+
 
 .about-me-container {
   display: flex;
@@ -181,7 +183,7 @@ projects a {
     z-index: 1;
 }
 
-#download_button {
+#download_button, #mouse_button {
   font-size: 24px;
   margin-left: 44px;
 
