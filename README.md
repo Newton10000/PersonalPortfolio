@@ -2,7 +2,7 @@
 Personal Portfolio
 
 
-This is a website for a fictional sushi restaurant.
+This is a website for my personal portfolio.
 
 I utilized HTML, CSS & Javascript in order to create this site.
 
