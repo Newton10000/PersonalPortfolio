@@ -59,6 +59,7 @@ nav {
 }
 
 #profile_photo {
+  margin-top: 50px;
   height: 440px;
   width: 320px;
   float: right;
